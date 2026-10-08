@@ -1,0 +1,33 @@
+{
+  "name": "opencode-dev-servers",
+  "version": "0.1.0",
+  "description": "Project-scoped dev server discovery and controls for the OpenCode V2 sidebar on macOS.",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.tsx",
+    "./rpc": "./rpc.ts"
+  },
+  "files": ["index.ts", "tui.tsx", "rpc.ts", "discovery.mjs"],
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "node --test discovery.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.5.10 <0.6.0",
+    "@opentui/solid": ">=0.5.10 <0.6.0",
+    "solid-js": "1.9.12"
+  },
+  "devDependencies": {
+    "@opentui/core": "0.5.10",
+    "@opentui/solid": "0.5.10",
+    "solid-js": "1.9.12",
+    "@types/node": "22.19.15",
+    "typescript": "5.9.3"
+  }
+}
