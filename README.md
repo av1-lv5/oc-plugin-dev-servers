@@ -15,15 +15,14 @@ For a local checkout, add its absolute path to `plugins` in
 }
 ```
 
-After publishing this repository on GitHub, replace `YOUR_USERNAME` and run:
+Install directly from GitHub:
 
 ```sh
-opencode plugin add github:YOUR_USERNAME/opencode-dev-servers
+opencode plugin add github:av1-lv5/oc-plugin-dev-servers
 ```
 
-To pin a release, use `github:YOUR_USERNAME/opencode-dev-servers#v0.1.0`
-once that tag exists. Use `opencode plugin check` to check package updates,
-and `opencode plugin update` to apply them.
+Use `opencode plugin check` to check package updates, and
+`opencode plugin update` to apply them.
 
 Restart the OpenCode service and reopen the TUI after installing:
 
